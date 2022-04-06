@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background: linear-gradient(45deg, #ffaf00, #bb02ff);
+}
+.container {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  text-align: center;
+}
+.card {
+  max-width: 280px;
+  height: 350px;
+
+  margin: 20px;
+
+  background: #fff;
+
+  transition: 0.5s;
+}
+h1 {
+  color: #fff;
+
+  font-size: 4em;
+
+  padding: 40px 0;
+}
+.circle {
+  width: 100%;
+  height: 180px;
+
+  position: relative;
+
+  clip-path: circle(150px at center 0);
+
+  background: black;
+  color: #fff;
+}
+p {
+  color: #666;
+
+  line-height: 20px;
+}
+a {
+  text-decoration: none;
+
+  display: inline-block;
+
+  margin: 15px;
+  padding: 10px 20px;
+
+  background: #000;
+  color: #fff;
+
+  border-radius: 20px;
+}
+a:hover {
+  color: #000;
+  border: 1px solid;
+}
+.container .one .circle,
+.container .one .content a {
+  background: #ffaf00;
+}
+.container .two .circle,
+.container .two .content a {
+  background: #da2268;
+}
+.container .three .circle,
+.container .three .content a {
+  background: #bb02ff;
+}
+.container:hover .card {
+  filter: blur(3px);
+
+  transform: scale(0.9);
+
+  opacity: 0.5;
+
+  transition: 0.5s;
+}
+.container .card:hover {
+  filter: blur(0px);
+
+  transform: scale(1.1);
+
+  opacity: 1;
+
+  transition: 0.5s;
+}
